@@ -6,7 +6,8 @@ const DAY_COUNTS_LOCAL_STORAGE_KEY = "dabbling.dayCounts"
 export const DayContext = React.createContext()
 
 function DateWall() {
-  const [inputDays, setInputDays] = useState("")
+  const [inputDays, setInputDays] = useState("100")
+  const [showTextField, setShowTextField] = useState(false)
   var inputDaysNumber = parseInt(inputDays)
   let currentDayCounts = []
   const [dayCounts, setDayCounts] = useState(currentDayCounts)
@@ -36,9 +37,14 @@ function DateWall() {
     return currentDayCounts
   }
 
+  function toggleTextField() {
+    setShowTextField(!showTextField)
+  }
+
   function handleSubmit(e) {
     e.preventDefault()
     getDayCounts()
+    toggleTextField()
   }
 
   function handleChange(e) {
@@ -61,17 +67,22 @@ function DateWall() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className="day-input-form" onSubmit={handleSubmit}>
         <input
           className="day-counts-input"
           type="number"
           value={inputDays}
           onChange={handleChange}
         />
-        <span className="sub-text">Days</span>
-        <button className="btn btn--create ml-1 hide" type="submit">
-          Create
-        </button>
+
+        <span
+          className="sub-text"
+          onClick={() => {
+            toggleTextField()
+          }}
+        >
+          Days
+        </span>
       </form>
 
       <div className="date-wall__wrapper">

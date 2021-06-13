@@ -7,6 +7,12 @@
     border-radius: 20px;
 }
 
+.day-input-form {
+    min-height: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
 .day-counts-input {
     width: 60px;
     text-align: center;
@@ -18,13 +24,14 @@
     background-color: hsla(0, 0%, 100%,0.5);
     border: none;
     padding: 0.4rem;
-    color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
 }
 
 .sub-text {
-    margin-left: 10px;
-    color: rgb(117, 117, 117);
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
 }
 
 .date-wall__grid {
