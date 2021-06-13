@@ -29,7 +29,7 @@
 
 .date-wall__grid {
     display: grid;
-    grid-template-columns: repeat(7, 40px);
+    grid-template-columns: repeat(10, 40px);
     row-gap: 0.5rem;
     column-gap: 0.5rem;
 }
