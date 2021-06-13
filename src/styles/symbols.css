@@ -1,0 +1,13 @@
+.button-wrapper{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-check {
+position: absolute;
+color: #60FF5C; 
+font-size: 0.75rem;
+margin-top: 26px;
+margin-left: 4.5px;
+}
