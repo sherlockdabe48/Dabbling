@@ -48,7 +48,7 @@ function App() {
       {showTextField && (
         <form onSubmit={handleSubmit}>
           <input
-          className="header-text-input"
+            className="header-text-input"
             type="text"
             value={headerText}
             onChange={(e) => handleChange(e.target.value)}

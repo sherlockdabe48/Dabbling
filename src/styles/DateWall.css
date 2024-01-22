@@ -36,9 +36,21 @@
 
 .date-wall__grid {
     display: grid;
-    grid-template-columns: repeat(20, 40px);
+    grid-template-columns: repeat(24, 40px);
     row-gap: 0.5rem;
     column-gap: 0.5rem;
+}
+
+@media screen and (max-width: 80em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(20, 40px);
+    }
+}
+
+@media screen and (max-width: 72em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(18, 40px);
+    }
 }
 
 .btn {
