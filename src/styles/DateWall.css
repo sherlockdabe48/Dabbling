@@ -53,6 +53,36 @@
     }
 }
 
+@media screen and (max-width: 64em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(16, 40px);
+    }
+}
+
+@media screen and (max-width: 56em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(14, 40px);
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(12, 40px);
+    }
+}
+
+@media screen and (max-width: 44em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(10, 40px);
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .date-wall__grid {
+        grid-template-columns: repeat(8, 40px);
+    }
+}
+
 .btn {
     background:none;
     border: none;
